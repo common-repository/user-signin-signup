@@ -1,0 +1,561 @@
+/*CSS Document */
+ 
+/* Table of Contents
+-----------------------------------------------------------------------------
+1. Clean Base
+2. Base Typography
+3. Images
+4. Links
+5. Forms
+6. Tables
+7. Framework 
+*/
+
+/* 1. Clean Base
+------------------------------------------------------------------------------*/
+html, body, br, hr, div, span, a, object, iframe, ul, ol, dl, li, dt, dd, h1, h2, h3, h4, h5, h6, p, blockquote, q, address,
+small, big, cite, dfn, ins, del, i, em, b, strong, sup, sub, strike, pre, code, samp, kbd, var, tt, form, fieldset, legend, label,
+input, textarea, option, .nobox {background: transparent; border: 0; font-size: 100%; margin: 0; outline: 0; padding: 0; vertical-align: baseline;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
+audio,canvas,progress,video {display: inline-block;vertical-align: baseline;}
+blockquote, q {quotes: none;}
+br {height: 0;}
+ul, ol, dl, li {margin:0; padding:0;}
+
+/* Class for clearing floats */
+.clear {clear:both; display:block; overflow:hidden; visibility:hidden; width:0; height:0;}
+.cf:after,.cf:before{display: table;content: ''}
+.cf:after{clear: both;}
+*, *:before, *:after {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+
+a { 
+    text-decoration: none;
+}
+.error{color:red !important;}
+.iusisu_error{color:red !important;}
+.iusisu_success-msg{color:green !important;}
+/*==========Form-Design-START===========*/
+h2{
+    padding-bottom: 15px;
+}
+h2, h3{
+font-size: 1.4em;
+}
+h1, h2, h3, h4, h5, h6{
+font-weight: 400 !important;
+}
+.iusisu_form-wrapper.iflair-plugin {
+    padding: 50px;
+    background-color: #fff;
+    box-shadow: 0px 10px 40px -3px rgb(36 48 59 / 15%);
+    border-radius: 8px;
+    max-width: 450px;
+    margin: 30px auto;
+    text-align: center;
+    display: block;
+}
+.iusisu_my-account-wrapper p.form_success_message{
+    font-size: 1.1em !important;
+}
+body .iusisu_form-wrapper.iflair-plugin h2 {
+    font-family: 'Roboto';
+    text-transform: capitalize;
+    color: #4A4A4A;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 46px;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+p.iusisu_login-message-con.success-msg {
+    color: green !important;
+}
+.iusisu_form-wrapper.iflair-plugin .iusisu_form-field {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    position: relative;
+}
+.iusisu_form-wrapper.iflair-plugin form .iusisu_form-field:last-of-type {
+    margin-bottom: 0;
+}
+.iusisu_form-wrapper.iflair-plugin .iusisu_form-field label {
+    display: block;
+    text-align: left;
+    line-height: 1;
+    font-size: 15px;
+    margin-bottom: 11px;
+    color: #4A4A4A;
+    font-weight: 500;
+}
+.iusisu_form-wrapper.iflair-plugin .iusisu_form-field label.iusisu_error {
+    font-size: 14px;
+    margin: 5px 0 0;
+    color: #ff0000;
+    font-weight: 400;
+}
+.custom-file-upload input {
+    margin-top: 12px;
+}
+.iusisu_form-wrapper.iflair-plugin .iusisu_form-field.iusisu_profile-picture{
+    text-align: left;
+}
+.iusisu_form-wrapper.iflair-plugin form input[type="email"],
+.iusisu_form-wrapper.iflair-plugin form input[type="text"],
+.iusisu_form-wrapper.iflair-plugin form input[type="password"] {
+    width: 100%;
+    background-color: transparent;
+    border-radius: 0;
+    appearance: none;
+    -webkit-appearance: none;
+    border-style: solid;
+    border-color: #3a51632b;
+    border-width: 0 0 1px 0;
+    padding: 15px 15px 15px 0px;
+    box-shadow: inset 0 1px 0px rgba(0,0,0,0);
+}
+.iusisu_form-wrapper.iflair-plugin form input[type="email"]:focus,
+.iusisu_form-wrapper.iflair-plugin form input[type="text"]:focus,
+.iusisu_form-wrapper.iflair-plugin form input[type="password"]:focus {
+    outline: none;
+}
+.iusisu_form-wrapper.iflair-plugin .iusisu_form-field i {
+    position: absolute;
+    top: 16px;
+    right: 4px;
+    bottom: 0;
+    margin: auto;
+    cursor: pointer;
+}
+.iusisu_form-wrapper.iflair-plugin .iusisu_form-field.remember-me {
+    text-align: left;
+}
+.iusisu_form-wrapper.iflair-plugin .iusisu_action-field {
+    margin: 20px 0;
+    width: 100%;
+    display: block;
+}
+.iusisu_form-wrapper.iflair-plugin div:last-child {
+    margin-bottom: 0;
+}
+.iusisu_form-wrapper.iflair-plugin .iusisu_action-field input[type="submit"],
+.iusisu_form-wrapper.iflair-plugin .iusisu_action-field input#submit {
+
+    width: 100%;
+    border-radius: 4px;
+    padding: 13px 15px;
+    height: auto;
+    background-color:var(--primary);
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--secondary);
+    cursor: pointer;
+}
+.iusisu_form-wrapper.iflair-plugin .iusisu_action-field input[type="submit"]:hover,
+.iusisu_form-wrapper.iflair-plugin .iusisu_action-field input#submit:hover {
+    background-color: var(--btn-hover);
+    color: var(--pre-secondary);
+}
+.iusisu_form-wrapper.iflair-plugin span.iusisu_forgotPassword {
+    display: inline-block;
+    padding-right: 7px;
+    border-right: 1px solid var(--secondary);
+    margin-right: 2px;
+}
+.iusisu_form-wrapper.iflair-plugin .iusisu_form-field input[type="password"] {
+    padding-right: 40px;
+}
+.iusisu_form-wrapper.iflair-plugin .iusisu_form-field span.iusisu_user_password_generate {
+    font-weight: 600;
+    cursor: pointer;
+    display: block;
+    text-align: right;
+    margin: 10px 0 0 auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #d1d1d1;
+    height: 48px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    font-size: 16px;
+}
+.iusisu_form-wrapper.iflair-plugin #iusisu-user-reg .iusisu_form-field i#iusisu_togglePassword {
+    position: absolute;
+    right: 94px;
+    top: 17px;
+}
+.iusisu_form-wrapper.iflair-plugin a {
+    color: var(--primary);
+    font-weight: 500;
+    font-size: 16px;
+}
+.iusisu_form-wrapper.iflair-plugin a:hover,
+.iusisu_form-wrapper.iflair-plugin a:focus {
+    color: #2271b1;
+}
+.iusisu_form-wrapper.iflair-plugin .iusisu_form-footer {
+    line-height: normal;
+    text-align: center;
+}
+/*==========Form-Design-END===========*/
+/*=======My-Account-Page-Design-Start========*/
+.iusisu_profile-picture .iusisu_image-wrap > img{
+    margin-top: 20px;
+    border: 1px solid #000;
+    display: block;
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+}
+.iusisu_image-wrap {
+    margin: 10px 0 0;
+    position: relative;
+    width: fit-content;
+    line-height: 1;
+}
+.iusisu_remove-image {
+    display: none;
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    border-radius: 10em;
+    padding: 3px 7px;
+    text-decoration: none;
+    font: 700 20px/20px sans-serif;
+    background: #555;
+    border: 2px solid #fff;
+    color: #FFF;
+    box-shadow: 0 2px 6px rgb(0 0 0 / 50%), inset 0 2px 4px rgb(0 0 0 / 30%);
+    text-shadow: 0 1px 2px rgb(0 0 0 / 50%);
+    -webkit-transition: background 0.5s;
+    transition: background 0.5s;
+}
+.remove-image:hover {
+    cursor: pointer;
+    color: #FFF;
+    background: #E54E4E;
+}
+.iusisu_my-account-wrapper {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    max-width: 900px !important;
+    box-shadow: 0px 10px 40px -3px rgb(36 48 59 / 15%);
+    background-color: #ededed;
+    margin: 3% auto;
+}
+.iusisu_my-account-wrapper ul.iusisu_tabs {
+    list-style-type: none;
+    width: 220px;
+    background-color: #fff;
+    box-shadow: 0px 10px 40px -3px rgb(36 48 59 / 15%);
+}
+.iusisu_my-account-wrapper ul.iusisu_tabs li.iusisu_tab-link {
+    display: flex;
+    width: 100%;
+    padding: 15px;
+    height: auto;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 0 !important;
+}
+.iusisu_my-account-wrapper .iusisu_user-profile-and-logout a{
+    text-decoration: none;
+}
+.iusisu_my-account-wrapper .iusisu_tab-content-wrapper #iusisu_dashboard .iusisu_form-wrapper{
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0px 10px 40px -3px rgb(36 48 59 / 15%);
+    border-radius: 8px;
+}
+.iusisu_my-account-wrapper ul.iusisu_tabs li.iusisu_tab-link.iusisu_current {
+    background-color: var(--primary);
+    color: var(--pre-secondary);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -khtml-border-radius: 3px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+.iusisu_my-account-wrapper ul.iusisu_tabs li.iusisu_tab-link.iusisu_current, .iusisu_my-account-wrapper ul.iusisu_tabs li.iusisu_tab-link:hover{
+    width: calc(100% + 20px);
+}
+.iusisu_my-account-wrapper ul.iusisu_tabs li.iusisu_tab-link i{
+    width: 31px;
+}
+.iusisu_my-account-wrapper ul.iusisu_tabs li.iusisu_tab-link:hover {
+    background-color: var(--btn-hover);
+    color: var(--pre-secondary);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -khtml-border-radius: 3px;
+}
+.iusisu_my-account-wrapper ul.iusisu_tabs li a, .iusisu_my-account-wrapper ul.iusisu_tabs li{
+    color: var(--secondary);
+}
+.iusisu_my-account-wrapper ul.iusisu_tabs li.iusisu_tab-link:hover a {
+    color: var(--pre-secondary);
+}
+.iusisu_my-account-wrapper ul.iusisu_tabs li a{
+    text-decoration: none;
+}
+.iusisu_my-account-wrapper .iusisu_tab-content-wrapper {
+    width: calc(100% - 220px);
+    padding: 20px;
+    padding: 0 0 0 20px;
+}
+.iusisu_my-account-wrapper .iusisu_tab-content-wrapper .iusisu_tab-content.iusisu_current {
+    display: block;
+}
+.iusisu_my-account-wrapper .iusisu_tab-content-wrapper .iusisu_tab-content {
+    display: none;
+}
+.iusisu_my-account-wrapper .iusisu_tab-content-wrapper div#iusisu_dashboard {
+    text-align: center;
+    color: #363636;
+}
+.iusisu_my-account-wrapper .iusisu_tab-content-wrapper .iusisu_tab-content h2 {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    margin-top: 0 !important;
+}
+.iusisu_my-account-wrapper .iusisu_tab-content-wrapper .iusisu_tab-content .iusisu_profile-picture .iusisu_button-primary{
+    font-size: 16px;
+}
+.iusisu_my-account-wrapper .iusisu_tab-content-wrapper .iusisu_tab-content a {
+    color: var(--primary);
+    font-weight: 600;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    font-size: 14px;
+    width: 25px;
+    display: flex !important;
+    height: 25px;
+    justify-content: center;
+    align-items: center;
+    line-height: 25px;
+}
+#iusisu_myeditprofile{
+    width: auto !important;
+    text-transform: capitalize;
+}
+.iusisu_my-account-wrapper .iusisu_user-profile-and-logout{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 3px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.iusisu_my-account-wrapper .iusisu_user-profile-and-logout a:hover{
+    padding: 0 !important;
+    opacity: 0.6;
+}
+.iusisu_my-account-wrapper .iusisu_tab-content-wrapper .iusisu_tab-content a:hover {
+    color: #000;
+}
+.updated_offer_details {
+    padding-bottom: 115px;
+}
+.iusisu_my-account-wrapper a.remove-profile-image {
+    display: none;
+    position: absolute;
+    top: -16px;
+    right: -8px;
+    border-radius: 10em;
+    padding: 3px 7px;
+    text-decoration: none;
+    font: 700 20px/20px sans-serif;
+    background: #555;
+    border: 3px solid #fff;
+    color: #FFF;
+    box-shadow: 0 2px 6px rgb(0 0 0 / 50%), inset 0 2px 4px rgb(0 0 0 / 30%);
+    text-shadow: 0 1px 2px rgb(0 0 0 / 50%);
+    -webkit-transition: background 0.5s;
+    transition: background 0.5s;
+}
+.iusisu_my-account-wrapper a.remove-profile-image:hover{
+    cursor: pointer;
+    color: #FFF;
+    background: #E54E4E;
+    padding: 4px 8px;
+    top: -18px;
+    right: -10px;
+}
+.iusisu_my-account-wrapper .iusisu_tab-content-wrapper .iusisu_user-profile-image {
+    margin-bottom: 15px;
+}
+.iusisu_my-account-wrapper .iusisu_tab-content-wrapper .iusisu_user-profile-image .iusisu_user-image,.iusisu_iflair-form-logo .iusisu_user-image{
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -khtml-border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.iusisu_my-account-wrapper .iusisu_tab-content-wrapper .iusisu_tab-content p {
+    margin-bottom: 15px;
+}
+
+.iusisu_my-account-wrapper .iusisu_tab-content-wrapper .iusisu_tab-content p:last-of-type {
+    margin-bottom: 0;
+}
+
+.iusisu_my-account-wrapper .iusisu_tab-content-wrapper .iusisu_form-wrapper {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    display: block;
+}
+#iusisu_user_loader{
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: black
+        url('../images/loader.svg')
+        50% 50%
+        no-repeat;
+}
+.iusisu_my-account-wrapper .iusisu_tab-content-wrapper .dropdown {
+    padding-left: 0 !important;
+}
+.iusisu_my-account-wrapper .iusisu_tab-content-wrapper div#space_order_list_dashboard_wrapper .table-wrapper {
+    margin: 0;
+    width: 100%;
+}
+.iusisu_my-account-wrapper .iusisu_tab-content-wrapper div#space_order_list_dashboard_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+.iusisu_my-account-wrapper .iusisu_tab-content-wrapper div#space_order_list_dashboard_wrapper > div {
+    margin: 5px;
+}
+.iusisu_my-account-wrapper .iusisu_tab-content-wrapper div#space_order_list_dashboard_wrapper > div:first-of-type {
+    margin-left: 0;
+    margin-right: auto;
+}
+.iusisu_my-account-wrapper .iusisu_tab-content-wrapper div#space_order_list_dashboard_wrapper .dataTables_filter {
+    margin-right: 0;
+}
+.iusisu_my-account-wrapper .iusisu_tab-content-wrapper table#space_order_list_dashboard {
+    margin-top: 30px;
+    font-size: 14px;
+}
+.iusisu_my-account-wrapper .iusisu_tab-content-wrapper table#space_order_list_dashboard th {
+    padding: 5px;
+    width: auto !important;
+}
+.iusisu_my-account-wrapper .iusisu_tab-content-wrapper table#space_order_list_dashboard td {
+    padding: 7px;
+}
+.iusisu_my-account-wrapper .iusisu_tab-content-wrapper table#space_order_list_dashboard tr td button.view-detail {
+    padding: 10px;
+    width: 100px;
+    line-height: 1;
+    background-color: #ed2050;
+}
+.iusisu_my-account-wrapper .iusisu_tab-content-wrapper table#space_order_list_dashboard tr td button.view-detail:hover {
+    background-color: #F1305D;
+}
+/*=======My-Account-Page-Design-End========*/
+@media (max-width: 1025px) {
+    .listing-wrapper .list-item {
+        width: 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .iusisu_my-account-wrapper .iusisu_tab-content-wrapper div#space_order_list_dashboard_wrapper .table-wrapper {
+        overflow-x: auto;
+    }
+    .iusisu_my-account-wrapper {
+        max-width: 94%;
+    }
+}
+
+@media (max-width: 767px) {
+    .iusisu_form-wrapper .iusisu_form-field.iusisu_profile-picture img {
+        max-width: 60px;
+    }
+    .iusisu_my-account-wrapper ul.iusisu_tabs li.iusisu_tab-link.iusisu_current, .iusisu_my-account-wrapper ul.iusisu_tabs li.iusisu_tab-link:hover {
+        width: 100%;
+    }
+}
+
+@media (max-width: 640px) {
+    .iusisu_my-account-wrapper ul.iusisu_tabs,
+    .iusisu_my-account-wrapper .iusisu_tab-content-wrapper {
+        width: 100%;
+    }
+    .iusisu_my-account-wrapper .iusisu_tab-content-wrapper div#space_order_list_dashboard_wrapper > div {
+        margin: 5px 0;
+        width: 100%;
+        text-align: left;
+    }
+}
+
+@media (max-width: 599px) {
+    .iusisu_my-account-wrapper .iusisu_tab-content-wrapper .iusisu_form-wrapper {
+        padding: 15px 0;
+    }
+    .iusisu_my-account-wrapper .iusisu_tab-content-wrapper{
+        padding: 15px 0;
+    }
+    .iusisu_my-account-wrapper .iusisu_tab-content-wrapper .iusisu_form-wrapper {
+        padding: 20px;
+    }
+    .iusisu_my-account-wrapper .iusisu_tab-content-wrapper .iusisu_tab-content a{
+        font-size: 13px;
+    }
+    .iusisu_form-wrapper.iflair-plugin .iusisu_form-field span.iusisu_user_password_generate {
+        position: relative;
+        background: transparent;
+        height: auto;
+        display: block;
+        padding: 0;
+    }
+    .iusisu_form-wrapper.iflair-plugin .iusisu_form-field i#iusisu_togglePassword{
+        right: 0;
+    }
+}
+@media screen and (max-width:400px){
+    .iusisu_my-account-wrapper .iusisu_user-profile-and-logout {
+        -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+        align-items: baseline;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .iusisu_my-account-wrapper .iusisu_user-profile-and-logout a{
+        height: auto !important;
+        line-height: 1.7 !important;
+    }
+}

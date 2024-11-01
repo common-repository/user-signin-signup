@@ -1,0 +1,224 @@
+/*========iFlair-login/Registration-Admin-Tabing-Start========*/
+input.iusisu_a_copy {
+    width: 50% !important;
+    margin: 5px !important;
+} 
+.iusisu_a_tabing-wrapper.iusisu_a_admin-tabing {
+    border: 1px solid #c3c4c7;
+    background-color: #ffffff;
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+ul.iusisu_a_tabs {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+h2, h3{
+    font-size: 1.4em !important;
+}
+h1, h2, h3, h4, h5, h6{
+    font-weight: 400 !important;
+}
+p.iusisu_a_form_success_message{
+    font-size: 1.2em !important;
+}
+.iusisu_a_tabing-wrapper.iusisu_a_admin-tabing ul.iusisu_a_tabs {
+    width: 20%;
+    display: block;
+    border-width: 0 1px 0 0;
+    border-style: solid;
+    border-color: #ededed;
+}
+.iusisu_a_tabing-wrapper.iusisu_a_admin-tabing ul.iusisu_a_tabs li.iusisu_a_tab-link {
+    font-size: 13px;
+    line-height: 18px;
+    padding: 10px 10px 10px 30px;
+    display: block;
+    margin: 0;
+    border-color: #ededed;
+    font-weight: 400;
+    color: #0073aa;
+    border-style: solid;
+    border-width: 1px 0 0;
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+.iusisu_a_tabing-wrapper.iusisu_a_admin-tabing ul.iusisu_a_tabs li.iusisu_a_tab-link:hover {
+    background-color: #ffffff;
+}
+
+.iusisu_a_tabing-wrapper.iusisu_a_admin-tabing ul.iusisu_a_tabs li.iusisu_a_tab-link:first-child {
+    border-top: none;
+}
+
+.iusisu_a_tabing-wrapper.iusisu_a_admin-tabing ul.iusisu_a_tabs li.iusisu_a_tab-link:last-child {
+    border-bottom-width: 1px;
+}
+.iusisu_a_tabing-wrapper.iusisu_a_admin-tabing ul.iusisu_a_tabs li.iusisu_a_tab-link.iusisu_a_current {
+    background-color: #ffffff;
+    color: #000000;
+    margin-right: -1px;
+}
+.iusisu_a_tabing-wrapper.iusisu_a_admin-tabing .iusisu_a_tab-content {
+    width: 80%;
+    display: none;
+}
+.iusisu_a_tabing-wrapper.iusisu_a_admin-tabing .iusisu_a_tab-content > div {
+    padding: 15px;
+}
+.iusisu_a_tabing-wrapper.iusisu_a_admin-tabing .iusisu_a_tab-content.iusisu_a_current {
+    display: block;
+}
+.iusisu_a_tabing-wrapper.iusisu_a_admin-tabing .iusisu_a_tab-content h3 {
+    display: block;
+    font-weight: bold;
+    margin: 0 0 3px;
+    padding: 0;
+    font-size: 14px;
+}
+.iusisu_a_tabing-wrapper.iusisu_a_admin-tabing .iusisu_a_tab-content .iusisu_a_input img.colorpick-eyedropper-input-trigger {
+    display: none;
+}
+.iusisu_a_tabing-wrapper.iusisu_a_admin-tabing .iusisu_a_tab-content .iusisu_a_inner-column-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+.iusisu_a_tabing-wrapper.iusisu_a_admin-tabing .iusisu_a_tab-content .iusisu_a_inner-column-wrapper .iusisu_a_col-6 {
+    width: 50%;
+    padding: 15px;
+    box-sizing: border-box;
+    border-width: 0px 1px 1px 0;
+    border-style: solid;
+    border-color: #ededed;
+}
+.iusisu_a_tabing-wrapper.iusisu_a_admin-tabing .iusisu_a_tab-content .iusisu_a_inner-column-wrapper .iusisu_a_col-6:nth-child(2n) {
+    border-right: none;
+}
+.iusisu_a_tabing-wrapper.iusisu_a_admin-tabing .iusisu_a_tab-content label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.iusisu_a_tabing-wrapper.iusisu_a_admin-tabing .iusisu_a_tab-content .iusisu_a_input {
+    margin-bottom: 10px;
+}
+.iusisu_a_tabing-wrapper.iusisu_a_admin-tabing .iusisu_a_tab-content .iusisu_a_input:last-of-type {
+    margin-bottom: 0;
+}
+.iusisu_a_tabing-wrapper.iusisu_a_admin-tabing .iusisu_a_tab-content .pages_wrap-single label {
+    margin-bottom: 0;
+    margin-right: 10px;
+    min-width: 140px;
+}
+.iusisu_a_tabing-wrapper.iusisu_a_admin-tabing .iusisu_a_tab-content .pages_wrap-single {
+    margin-bottom: 10px;
+}
+.iusisu_a_tabing-wrapper.iusisu_a_admin-tabing .iusisu_a_tab-content .pages_wrap-single:last-of-type {
+    margin-bottom: 0;
+}
+.iusisu_a_tabing-wrapper.iusisu_a_admin-tabing .iusisu_a_tab-content .iusisu_a_inner-column-wrapper .iusisu_a_input label {
+    display: block;
+}
+.iusisu_a_tabing-wrapper.iusisu_a_admin-tabing .iusisu_a_tab-content .iusisu_a_inner-column-wrapper .iusisu_a_input input[type="text"],
+.iusisu_a_tabing-wrapper.iusisu_a_admin-tabing .iusisu_a_tab-content .iusisu_a_inner-column-wrapper .iusisu_a_input input[type="email"],
+.iusisu_a_tabing-wrapper.iusisu_a_admin-tabing .iusisu_a_tab-content .iusisu_a_inner-column-wrapper .iusisu_a_input textarea,
+.iusisu_a_tabing-wrapper.iusisu_a_admin-tabing .iusisu_a_tab-content input[type="text"],
+.iusisu_a_tabing-wrapper.iusisu_a_admin-tabing .iusisu_a_tab-content input[type="email"],
+.iusisu_a_tabing-wrapper.iusisu_a_admin-tabing .iusisu_a_tab-content textarea {
+    width: 100%;
+    max-width: 100%;
+}
+.iusisu_a_tabing-wrapper.iusisu_a_admin-tabing .iusisu_a_tab-content .iusisu_a_inner-column-wrapper .iusisu_a_input input.upload_image_button,
+.iusisu_a_tabing-wrapper.iusisu_a_admin-tabing .iusisu_a_tab-content input.upload_image_button {
+    width: auto;
+    margin: 10px 0 0;
+    display: block;
+}
+.iusisu_a_tabing-wrapper img {
+    max-width: 100%;
+    height: auto;
+}
+.iusisu_a_tabing-wrapper.iusisu_a_admin-tabing div#social_media .row:not(:last-of-type) {
+    margin-bottom: 10px;
+}
+.iusisu_a_tabing-wrapper.iusisu_a_admin-tabing div#social_media table {
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 0;
+    border-collapse: collapse;
+}
+.iusisu_a_tabing-wrapper.iusisu_a_admin-tabing div#social_media table tr td {
+    padding: 8px;
+    border-width: 0 1px 0 0;
+    border-style: solid;
+    border-color: #dddddd;
+}
+.iusisu_a_tabing-wrapper.iusisu_a_admin-tabing div#social_media table tr th {
+    text-align: left;
+    border-width: 0 1px 1px 0;
+    border-style: solid;
+    border-color: #dddddd;
+    padding: 8px;
+}
+.iusisu_a_tabing-wrapper.iusisu_a_admin-tabing div#social_media #cloneButton {
+    margin: 15px 0 0 auto;
+    display: block;
+}
+.iusisu_a_admin h2{
+    margin-top: 0;
+}
+.iusisu_a_admin .iusisu_a_shortcode-frm {
+    display: flex;
+    align-items: center;
+}
+.iusisu_a_admin .iusisu_a_shortcode-frm label{
+    flex: 0 0 150px;
+    max-width: 150px;
+    display: block;
+}
+.iusisu_a_admin .iusisu_a_shortcode-frm input {
+    width: 210px !important;
+}
+.iusisu_a_admin p{
+    margin-top: 0;
+}
+.iusisu_a_admin .iusisu_a_form_custom_message h2{
+    margin-bottom: 5px;
+}
+.iusisu_a_admin .iusisu_a_form_custom_message p{
+    font-size: 13px !important;
+}
+.iusisu_a_admin-tabing #iusisu_site_shortcodes .iusisu_a_shortcode-frm .iusisu-txt h4{
+    margin: 0;
+}
+.iusisu_a_admin ul.iusisu_a_tabs li.iusisu_a_shortcode_info.iusisu_a_tab-link{
+    background-image: url(../images/shortcode.svg);
+    padding: 10px 10px 10px 34px;
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: center left 10px;
+}
+.iusisu_a_admin ul.iusisu_a_tabs li.iusisu_a_user_role_setting.iusisu_a_tab-link{
+    background-image: url(../images/user_role.svg);
+    padding: 10px 10px 10px 34px;
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: center left 10px;
+}
+.iusisu_a_admin ul.iusisu_a_tabs li.iusisu_a_user_page_setting.iusisu_a_tab-link{
+    background-image: url(../images/login.svg);
+    padding: 10px 10px 10px 34px;
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: center left 10px;
+}
+.iusisu_a_admin ul.iusisu_a_tabs li.iusisu_a_email_setting.iusisu_a_tab-link{
+    background-image: url(../images/email_setting.svg);
+    padding: 10px 10px 10px 34px;
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: center left 10px;
+}
+/*========iFlair-login/Registration-Admin-Tabing-End========*/
